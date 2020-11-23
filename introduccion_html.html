@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción HTML</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        h1{
+            color:blue;
+            background-color: orange;
+        }
+        h2 {
+            color:goldenrod;
+            font-family: Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>INTRODUCCIÓN A HTML</h1>
+    <h2>HTML boilerplate</h2>
+    <p>Es la estructurta de toda página web. En el caso de Visual Studio Code lo hacemos aparecer
+        escrbiendo html. Después pinchamos en html:5. 
+    </p>
+    <br>
+    <h2>Encabezados, de h1 a h6</h2>
+    <p>Los usamos para destacar texto por su tamaño. Para escribir con un tipo de encabezado escribimos el 
+        texto dentro del comando &lth1&gt(para abrir el comando), u otro número del 1 al 6, y &lt/h1&gt(para cerrar
+         el comando).
+    </p>
+     <p>Por ejemplo:</p>
+     <h3>Esto está escrito en h3</h3>
+     <h4>Y esto está escrito en h4</h4>
+     <br>
+     <h2>Salto de línea con br</h2>
+    <br>
+    <p>Aquí hemos usado &ltbr&gt para dejar un espacio en blanco. He usado esto mismo para
+        dejar espacio entre los diferentes apartados.
+    </p>
+    <br>
+    <br>
+    <h2>Cursiva</h2>
+     <p>Para destacar lo que queramos con cursiva lo escribimos entre &ltem&gt y &lt/em&gt.</p>
+     <p>Donde se vea <em>algo</em> en cursiva</p>
+     <br>
+    <h2>Negrita</h2>
+     <p>Para destacar lo más importante usamos la negrita. Para ello escribimos lo que queramos poner en negrita 
+         entre el comando &ltstrong&gt y &lt/strong&gt.</p>
+    <p>En 1939 inicia la <strong>2º Guerra Mundial</strong>.</p>
+
+     <br>
+     <h2>Lista no ordenada</h2>
+     <p>La usamos para hacer una lista de viñetas. Para ello escribimos &ltul&gt y &lt/ul&gt, y dentro escribimos &ltli&gt 
+         y &lt/li&gt para cada elemento de la lista.
+     </p>
+     <h4>Lista de la compra</h4>
+     <ul>
+         <li>Yogures</li>
+         <li>Leche</li>
+         <li>Papel higiénico</li>
+     </ul>
+     <br>
+     <h2>Lista ordenada</h2>
+     <p>Con ella podemos hacer una lista enumerada escribiendo el comando &ltol&gt y &lt/ol&gt, y dentro de este
+        el comando &ltli&gt y &lt/li&gt para cada elemento de la lista, al igual que con la lista no ordenada.</p>
+        <h4>Países con mayor población</h4>
+        <ol>
+            <li>India</li>
+            <li>China</li>
+            <li>Estados Unidos</li>
+        </ol>
+        <br>
+    <h2>Insertar imagenes</h2>
+    <p>Para insertar imágenes en nuestra web tenemos que usar el comando &ltimg&gt. En este caso no hay
+        que poner comando de cierre. Dentro de este podemos escribir otros comandos que irán seguidos de un 
+        igual y entre comillas escribimos el contenido correspondiente a cada comando. Algunos de ellos son:</p> 
+        <ul>
+            <li><strong>src</strong>: entre las comillas escribimos la ruta de la carpeta en que se encuentra la imagen,
+             seguido de "/" y del nombre de la imagen.  </li>
+            <li><strong>alt</strong>: aquí escribimos el texto que queramos que aparezca en caso de que no se
+                pueda cargar la imágen.</li>
+            <li><strong>width</strong>: en este caso debemos introducir un número que corresponde al número de 
+            pixeles de ancho que va a ocupar la imagen.</li>
+            
+        </ul>
+    </p>
+    <p>Por ejemplo:</p>
+    <img src="imagenes/81-600x338.jpeg" alt="Ned Stark sentado en el trono de hierro (Juego de Tronos)"
+    width="670">
+    <p>Si queremos poner una imagen de internet para no tener que subirla a la página web, en &ltsrc&gt
+        escribimos la dirección de la imagen. Por ejemplo:
+    </p>
+    <img src="https://estaticos.elperiodico.com/resources/jpg/7/4/img-2178-1598634221847.jpg" alt="Imagen de Broncano en la Resistencia"
+    width="600">
+    <p>Esto es una prueba: Podemos escribir &ltem&gt.</p>
+
+
+</body>
+</html>

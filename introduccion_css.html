@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción CSS</title>
+    <style>
+        body{
+            background-color:pink;
+        }
+        h1{
+            background-color: lime;
+            color:rgb(170, 51, 170);
+        }
+        h2{
+            color:yellowgreen;
+            font-family: Verdana, sans-serif;
+        }
+        #texto_ejemplo_id{
+            color: crimson;
+            text-decoration: underline;
+        }
+        .texto_ejemplo_clase{
+            color:royalblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>INTRODUCCIÓN A CSS</h1>
+    <h2>Seleccionar por nombre de etiqueta</h2>
+    <p>Para ello escribimos, dentro de <strong>&lthead&gt</strong>, el comando <strong>&ltstyle&gt</strong>
+         y lo cerramos con <strong>&lt/style&gt</strong> y a su vez dentro de este escribimos 
+         el nombre de la etiqueta que queramos modificar seguida de los símbolos {}, dentro de
+         los cuales escribimos la propiedad que queremos modificar. Estas son algunas de ellas:
+         <ul>
+             <li>"<strong>color</strong>:" y seguido del nombre del color o de rgb(x,y,z), donde
+            x,y,z son los números correspondientes al color deseado. Con esto cambiamos el color
+            del texto. </li>
+            <li>"<strong>background-color</strong>:" y seguido del nombre del color o de rgb(x,y,z).
+            Esto permite cambiar el color del fondo de ese texto.</li>
+         </ul>
+         He usado esto para el título de la página y de los diferentes apartados.
+    </p>
+    <br>
+    <h2>Seleccionar por id</h2>
+    <p>Para ello asignamos una ip al comando que queramos escribiendo <strong>id=""</strong> dentro del comando
+    y le otorgamos un nombre único.</p>
+    <p>A continuación, dentro del comando &ltstyle&gt escribimos <strong>#nombre_de_la_ip {}</strong>. 
+    Dentro de las llaves hacemos las modificaciones.</p>
+    <p id="texto_ejemplo_id">Este es un ejemplo usando la ip</p>
+    <br>
+    <h2>Seleccionar por clase</h2>
+    <p class="texto_ejemplo_clase">Lo utilizamos para modificar varios elementos sin modificar todos los del mismo tipo de la página web y
+        sin tener que adjudicar una ip a cada elemento. Para ello escribimos dentro del comando <strong>class=""</strong>
+         e introducimos el mismo nombre en cada elemento que queramos que tenga las mismas propiedades dentro
+          de las comillas.</p>
+    <p class="texto_ejemplo_clase">Ahora, de nuevo, dentro de <strong>&ltstyle&gt</strong> escribimos
+        <strong>".nombre_de_la_clase"</strong> y cambiamos las propiedades que queramos.</p>
+    <p class="texto_ejemplo_clase">He usado esto para modificar estos tres párrafos.</p>
+
+
+</body>
+</html>

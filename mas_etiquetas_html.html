@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Más etiquetas HTML</title>
+    <style>
+        body{
+            background-color:palegreen;
+        }
+        h2{
+            color:dodgerblue;
+            font-family: Verdana, sans-serif;
+        }
+        h1{
+            background-color: mediumblue;
+            color: lime;
+        }
+        table{
+            border-width: 3px;
+            border-style: solid;
+            border-color: darkred;
+            background-color: indigo;
+            color:lime;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">MÁS ETIQUETAS HTML</h1>
+    <h2>Enlaces con textos e imágenes</h2>
+    <p>Para hacer un enlace que nos lleve a otra página tenemos que escribir dentro del comando en que queramos
+    hacer el enlace, por ejemplo dentro de <strong>&ltp&gt...&lt/p&gt</strong> si queremos que el enlace
+    sea un <strong>texto</strong> o dentro de <strong>&ltimg&gt</strong> si es una <strong>imagen</strong>.
+    A continuación, escribimos <strong>&lta&gt...&lt/a&gt</strong>. Todo lo que este dentro de este comando formará parte del
+    enlace. Si hay algo fuera de este comando, pero dentro del anterior no formará parte del enlace.
+    Para establecer la página a la que queremos que nos lleve escribimos <strong>href=""</strong>
+    dentro de &lta&gt. Dentro de las comillas escribimos <strong>la dirección de la página</strong>.</p>
+    <p>Pincha <a href="https://www.iesgaherrera.com/">aquí</a> para ir a la página de IES Gabriel
+        Alonso de Herrera.</p>
+    <p>Pincha en la imagen para ir a la página de Marca. <br>
+        <a href="https://www.marca.com/"><img src="imagenes/Logo_Marca.png"
+         alt="Logo de amazon" width="400" ></a></p>
+    <h2>Enlaces absolutos y relativos</h2>
+    <ul>
+        <li><strong>Enlace absoluto</strong>: En este tipo de enlace dentro de <strong>href=""</strong>
+        escribimos la url de la página. Se suele usar para llevarnos a páginas fuera de nuestro sitio web. <br>
+        Por ejemplo: Pincha en la imagen para ir a la página de rtve. <br>
+        <a href="https://www.rtve.es/"> <img src="imagenes/logotipo_rtve.png" alt="Logotipo rtve" width="300"></a></li>
+        <li><strong>Enlace relativo</strong>: En este caso escribimos la ruta que tiene que seguir dentro
+        de nuestra carpeta raíz. Por tanto se usa para págians que están dentro de nuestro dominio. <br>
+        Por ejemplo: Pincha <a href="index.html">aquí</a>para volver a la página de inicio.</li>
+    </ul>
+    <br>
+    <h2>Enlaces a otras pestañas</h2>
+    <p>Para abrir enlaces en pestañas nuevas simplemente tenemos que añadir <strong>target="blank"
+    </strong> dentro de la etiqueta &lta&gt</p>
+    <p>Este es un ejemplo:</p>
+    <p>Si pinchas <a href="https://www.iesgaherrera.com/" target="blank">aquí</a> irás a la 
+        página del IES Gabriel Alonso de Herrera</p>
+    <br>
+    <h2>Enlaces externos e internos</h2>
+    <ul>
+        <li><strong>Enlace externo</strong>: Lo usamos para llevarnos a una página distinta, ya sea de nuestro
+        dominio o no. Todos lo ejemplos anteriores son de este tipo, de manera que solo tenemos que elegir uno
+        de ellos para hacer un enlace externo.</li>
+        <li><strong>Enlace interno</strong>: Lo usamos para dirigirnos a algun punto de la página en que nos
+        encontremos en ese momento. Para hacer un enlace interno tenemos que dar una ip al texto al que nos
+        dirigiremos con el enlance (pincha <a href="introduccion_css.html">aquí</a> para ver como usar la ip).
+        A continuación, dentro del enlace, en <strong>href=""</strong>, dentro de las comillas, escribimos 
+        <strong>#nombre_ip</strong>. <br>
+        Pincha <a href="#titulo">aquí</a> para volver al inicio de la página.</li>
+    </ul>
+    <br>
+    <h2>Tablas</h2>
+    <p>Este es un ejemplo de una tabla.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Prenda</th>
+                <th>Precio</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pantalon</td>
+                <td>15.00</td>
+                <td>Negro</td>
+            </tr>
+            <tr>
+                <td>Sudadera</td>
+                <td>20.00</td>
+                <td>Rosa</td>
+            </tr>
+            <tr>
+                <td>Camiseta</td>
+                <td>12.00</td>
+                <td>Rojo</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Comentarios</h2>
+    <p>Los comentarios solo los podemos leer cuando vemos el código HTML de una página, es decir, el
+        no lo lee.
+    </p>
+    <p>Para hacer un comentario escribimos &lt!--El texto--&gt</p>
+    <p>A continuación hay un comentario: <!--Este es el ejemplo--></p>
+    
+</body>
+</html>
