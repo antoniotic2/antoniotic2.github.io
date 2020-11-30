@@ -6,28 +6,54 @@
     <style>
         body{
             background-color:lightskyblue;
+            text-align: center;
         }
         h1{
-            color:red;
+            color:chartreuse;
+            font-size: 4em;
+            font-family:Cambria, serif;
         }
         a{
             color:orangered;
         }
-        li{
-            color:orangered;
+        .indice{
+            background-color: aqua;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-top: 0px;
+            border: 4px solid blue;
+            border-top: 2px solid blue;
+
+        }
+        .titulo{
+            border-radius: 20%;
+            background-color:indigo;
+            padding: 40px;
+            border:4px groove red;
+        }
+        .encabezado{
+            background-color:chartreuse;
+            margin-right: 15%;
+            margin-left: 15%;
+            margin-bottom: 0px;
+            margin-top: 50px;
+            border: 4px solid blue;
+            border-bottom: 2px solid blue;
+            color: indigo;
         }
     </style>
 </head>
 <body>
-    <h1>SITIO WEB DE ANTONIO</h1>
-   <p>A continuación aparecen una serie de enlaces a:</p>
-   <ol>
-       <li><a href="introduccion_html.html">
-           Una introducción a HTML.</a></li>
-        <li><a href="introduccion_css.html">Una introducción a CSS.</a></li>
-        <li><a href="mas_etiquetas_html.html">Más etiquetas HTML</a></li>
-        <li><a href="css_propiedades_texto.html">CSS: Propiedades del texto</a></li>
-   </ol>
+   <div class="titulo"> <h1>SITIO WEB DE ANTONIO</h1></div>
+    <div class="encabezado"><p>A continuación aparecen una serie de enlaces a:</p></div>
+   <div class="indice">
+       <p><a href="introduccion_html.html"> Una introducción a HTML.</a></p>
+        <p><a href="introduccion_css.html">Una introducción a CSS.</a></p>
+        <p><a href="mas_etiquetas_html.html">Más etiquetas HTML</a></p>
+        <p><a href="css_propiedades_texto.html">CSS: Propiedades del texto</a></p>
+        <p><a href="diseno_css.html">Diseño CSS</a></p>
+        <p><a href="archivos/2_incluir_sitio_basico_20-21.pdf">Contenido básico de la web</a></p>
 
+</div>
 </body>
 </html>

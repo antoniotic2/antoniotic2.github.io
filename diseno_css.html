@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño css</title>
+    <style>
+        body{
+            background-color: crimson;
+        }
+        h1{
+            background-color:cyan;
+            color:chocolate;
+            text-align: center;
+            margin: 20%;
+            margin-top: 7%;
+            margin-bottom: 7%;
+            font-size: 4em;
+            border: 4px solid chocolate;
+            padding: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h2 {
+            color:red;
+            font-family: Verdana, sans-serif;
+            margin-left: 4%;
+        }
+        .cuerpo{
+            margin:5%;
+            font-size: 1.5em;
+            border: 6px ridge mediumblue;
+            padding: 5%;
+            color:mediumblue;
+            background-color:chocolate;
+        }
+        .span_ejemplo{
+            color:red;
+            font-style:bold;
+        }
+        .ejemplo_overflow{
+            background-color:crimson;
+            height: 120px;
+            margin-left: 30%;
+            margin-right: 30%;
+            overflow: auto;
+            border: 4px dashed red;
+        }
+        img{
+            margin-left: 30%;
+        }
+        .elementos_box_model{
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Diseño CSS</h1>
+    <div class="cuerpo">
+        <h2>Span</h2>
+        <p>Esta etiqueta la usamos para seleccionar una palabra, frase o incluso texto para cambiar sus
+            propiedades sin alterar la estructura del texto, es decir, <span class="span_ejemplo">sin saltos de línea
+            </span>. Como siempre para cambiar estas propiedades escribimos en <span class="span_ejemplo">
+            style</span> el nombre de la clase o el de la id con sus respectivos <span class="span_ejemplo">
+            "."</span> y <span class="span_ejemplo">"#"</span>
+        </p>
+        <p>Un ejemplo de esto es lo que hemos usado para las palabra en rojo del párrafo anterior.</p>
+        <h2>Div</h2>
+        <p>Esta etiqueta la usamos también para seleccionar una palabra, frase o texto para modificar las
+            propiedades de estos, pero al contrario que con <strong>span</strong>, con esta etiqueta creamos
+            un bloque, es decir, provocamos un salto de línea. Y al igual que con el span, escribimos dentro
+            de <strong>style</strong> el nombre de la clase o la id.
+        </p>
+        <p>En mi caso, he usado uno para el título de la página y otro para el cuerpo de la página.</p>
+        <h2>Overflow</h2>
+        <p>Esta propiedad la usamos en caso de que al establecer el ancho y el alto de un bloque con div
+            no aparezca todo el texto pues no cabe en ese espacio. Entonces utilizamos <strong>overflow</strong>
+            escribiendo dentro de las propiedades del <strong>div</strong> esta etiqueta. Si queremos que
+            aparezca una barra de desplazamiento entonces escribimos <strong>auto</strong>. Hay otras opciones
+            mucho menos usadas como <strong>visible</strong> y <strong>hidden</strong> porque no muestran
+            todo el contenido del bloque.
+        </p>
+        <p>A continuación vamos a ver un ejemplo:
+            <div class="ejemplo_overflow">
+                Victoria de Rafa Nadal en la final de Roland Garros 2020 ante Novak Djokovic. El español
+                 consiguió su Grand Slam número 20, empatando así con Roger Federer como el tenista con 
+                 más major a lo largo de toda la historia, y su 13º triunfo sobre la tierra batida de París.
+                  Histórico. Leyenda. Los adjetivos se quedan pequeños para este gigante de Manacor.
+            </div>
+        </p>
+        <h2>Box model</h2>
+        <img src="imagenes/modelo_caja.png" alt="imagen del modelo de caja" width="40%">
+        <p>Como se puede ver en la imagen, los elementos del modelo de caja son:
+            <ul>
+                <li><span class="elementos_box_model">Margen:</span> es el área transparente alrededor de la
+                caja que la separa de otros elementos. Podemos especificar el margen de cada lado. Escribimos
+                <strong>margin</strong> en Visual Studio Code.</li>
+                <li><span class="elementos_box_model">Borde:</span> es el borde del bloque. le podemos dar
+                tres propiedades: el grosor, el estilo y el color. Escribimos <strong>border</strong>.</li>
+                <li><span class="elementos_box_model">Relleno:</span> es el espacio que existe entre el borde
+                y el contenido del bloque, por tanto lo usamos para que el contenido no quede pegado al borde.
+                Escribimos <strong>padding</strong>.</li>
+                <li><span class="elementos_box_model">Contenido:</span> es el texto que hayamos 
+                escrito en HTML.</li>
+            </ul>
+        </p>
+    </div>
+    
+</body>
+</html>

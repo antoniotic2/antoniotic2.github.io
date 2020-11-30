@@ -4,12 +4,7 @@
     <title>CSS Propiedades del texto</title>
     <style>
         body{
-            background-color: sandybrown;
-        }
-        h2{
-            font-family: Verdana, sans-serif;
-            text-decoration:underline ;
-            color: darkturquoise;
+            background-color:gold;
         }
         #ejemplo_fontstyle{
             font-style: italic;
@@ -20,19 +15,39 @@
         #ejemplo_textalign{
             text-align: right;
         }
-        h1{
-            text-align: center;
-            background-color: darkcyan;
-            color: darkred;
-        }
         #ejemplo_textdecoration{
-            text-decoration:overline;
+            text-decoration:underline;
+        }
+        h1{
+            background-color:aqua;
+            color: red;
+            text-align: center;
+            margin: 20%;
+            margin-top: 7%;
+            margin-bottom: 7%;
+            font-size: 4em;
+            border: 4px solid red;
+            padding: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h2 {
+            color:aqua;
+            font-family: Verdana, sans-serif;
+            margin-left: 4%;
+        }
+        .cuerpo{
+            margin:5%;
+            font-size: 1.5em;
+            border: 6px ridge aqua;
+            padding: 5%;
+            color:yellow;
+            background-color:violet;
         }
     </style>
 </head>
 <body>
     <h1>CSS: Propiedades del texto</h1>
-    <br>
+    <div class="cuerpo">
     <h2>Familia de fuente genérica y específica</h2>
     <p>Las familias de fuente las usamos para cambiar el tipo de letra de nuestra página web. Para ello, dentro de la etiqueta
         &ltstyle&gt escribimos dentro del tipo de de etiqueta a la que queramos cambiar su fuente <strong>font-family:;</strong>.
@@ -63,7 +78,7 @@
     <h2>Decoración del texto</h2>
     <p>Para modificarlo, usamos <strong>text-decoration:</strong>. Algunas de las opciones son
     underline, overline o none (usado sobre todo para los enlaces).</p>
-    <p id="ejemplo_textdecoration">He usado esto en los títulos de los apartados y en este mismo párrafo.</p>
-    
+    <p id="ejemplo_textdecoration">He usado esto en este párrafo.</p>
+</div>
 </body>
 </html>
