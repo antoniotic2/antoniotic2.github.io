@@ -4,17 +4,17 @@
     <title>Diseño css</title>
     <style>
         body{
-            background-color: crimson;
+            background-color: rgba(138, 0, 28, 0.644);
         }
         h1{
             background-color:cyan;
             color:chocolate;
             text-align: center;
-            margin: 20%;
+            margin:20%;
             margin-top: 7%;
             margin-bottom: 7%;
             font-size: 4em;
-            border: 4px solid chocolate;
+            border: 4px solid mediumblue;
             padding: 10px;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
@@ -24,7 +24,7 @@
             margin-left: 4%;
         }
         .cuerpo{
-            margin:5%;
+            margin: 5%;  
             font-size: 1.5em;
             border: 6px ridge mediumblue;
             padding: 5%;
@@ -36,7 +36,7 @@
             font-style:bold;
         }
         .ejemplo_overflow{
-            background-color:crimson;
+            background-color:rgba(138, 0, 28, 0.644);
             height: 120px;
             margin-left: 30%;
             margin-right: 30%;
@@ -45,11 +45,48 @@
         }
         img{
             margin-left: 30%;
+            z-index: 1;
         }
         .elementos_box_model{
             color: red;
             font-weight: bold;
         }
+        h3{
+            color: aqua;
+        }
+        .posicion{
+            color: aqua;
+            font-weight: bold;
+        }
+        #rafa_nadal{
+            position: relative;
+            margin:30px;
+            width: 50%;
+            z-index: 1;
+        }
+        #djokovic{
+            position: absolute;
+            width: 15%;
+            right: 105px;
+            top:2560px;
+            z-index: 1;
+        }
+        #pelota_de_tenis{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            z-index: 2;
+            width: 100px;
+        }
+        #imagen_ejemplo_float{
+            width: 200px;
+            float: right;
+            margin-left: 30px;
+        }
+        .ejemplo_clear{
+            clear:both;
+        }
+
 
     </style>
 </head>
@@ -103,6 +140,40 @@
                 escrito en HTML.</li>
             </ul>
         </p>
+        <h2>Positioning</h2>
+        <ul>
+            <li><h3>Relative</h3> Posiciona el bloque respecto a los otros elementos.
+            <p>Escribimos en <strong>style</strong> dentro de las propiedades del bloque o elemento
+            <strong>position:<span class="posicion">relative</span>;</strong>.</p>
+            <img src="imagenes/nadal-roland-garros-2020-day-6-slide.jpg" alt="Rafa Nadal" id="rafa_nadal"></li>
+            <li><h3>Absolute</h3> Posiciona el bloque respecto a la página web.
+            <p>Escribimos en <strong>style</strong> dentro de las propiedades del bloque o elemento
+            <strong>position:<span class="posicion">absolute</span>;</strong>.</p>
+            <img src="imagenes/djokovic_imagen.jpg" alt="Djokovic" id="djokovic"></li>
+            <li><h3>Fixed</h3> Posiciona el bloque respecto a la ventana.
+            <p>Escribimos en <strong>style</strong> dentro de las propiedades del bloque o elemento
+            <strong>position:<span class="posicion">fixed</span>;</strong>.</p>
+            <p>El ejemplo es la imagen que aparece abajo a la derecha.</p>
+            <img src="imagenes/imagen_pelota_de_tenis.jpg" alt="Pelota de tenis" id="pelota_de_tenis"></li>
+            <li><h3>Z-index</h3> Esta es otra propiedad del bloque para establecer un orden de superposición
+            entre los distintos elementos.</li>
+        </ul>
+        <h2>Float</h2>
+            <img src="imagenes/ilustracion-pelota-tenis-dos-raquetas_24877-60158.jpg" alt="imagen de 2 raquetas" id="imagen_ejemplo_float">
+            <p>
+            Esta etiqueta la usamos para poner un elemento a un lado del bloque sin que el resto de elementos del
+            bloque no se superpongan. Para usarlo escribimos en las propiedades del elemento una nueva propiedad:
+            <strong>float</strong> y a continuación <strong>none</strong>, si no queremos que flote o <strong>left</strong>
+            o <strong>right</strong> si queremos que flote a izquierda o a derecha.
+            </p>
+            <p class="ejemplo_clear">El ejemplo es la imagen que aparece al lado.</p>
+        <h2>Clear</h2>
+        <p>Esta propiedad la usamos en caso de que queramos que un elemento no aparezca a un lado de otro
+            elemento flotante. Podemos especificar que no aparezca a la derecha, la izquierda o ambos de
+            un elemento flotante escrbiendo dentro de la propiedad <strong>clear</strong> las opciones
+            <strong>right, left o both</strong>.
+        </p>
+        <p>El ejemplo en que uso esto es en el último párrafo del apartado anterior.</p>
     </div>
     
 </body>
