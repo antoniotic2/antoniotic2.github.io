@@ -43,18 +43,60 @@
             text-decoration: underline;
             
         }
-        .ejemplo_mas_de_una_clase{
+        .ejemplo_apartado{
             border: dashed;
             padding: 10px;
 
         }
+        .tipo_de_pista{
+            text-decoration: underline;
+        }
+        span.tipo_de_pista{
+            font-style: italic;
+        }
+        .enumeracion_torneos{
+            float: left;
+        }
+        #ejemplo_combinacion_clase_etiqueta{
+            width: 300px;
+            margin-left: 50px;
+        }
+        #ejemplo_descendant_selectors_1{
+            width: 300px;
+            margin-left: 40px;
+        }
+        .puntos{
+            color:red;
+        }
+        .ronda{
+            color:red;
+        }
+        p .ronda{
+            font-weight: bold;
+        }
+        p .puntos{
+            font-weight: bold;
+        }
+        ul.puntos_por_ronda li{
+            font-style: italic;
+        }
+        ul li .ronda{
+            color:deeppink;
+        }
+        ul li .puntos{
+            font-weight:unset;
+        }
+        .puntos_por_ronda{
+            float: left;
+        }
+
     </style>
 </head>
 <body>
     <h1>Más selectores CSS</h1>
     <div class="cuerpo">
     <h2>Más de una clase en la misma etiqueta HTML</h2>
-    <div class="ejemplo_mas_de_una_clase">
+    <div class="ejemplo_apartado">
     <p class="mas_de_una_clase_1 mas_de_una_clase_2 mas_de_una_clase_3">La forma moderna del
         tenis, en cuanto a raquetas y canchas, se inicia realmente en 1873, cuando un
         mayor del ejército inglés, llamado Walter Clopton Wingfield, diseñó y manufacturó un kit consistente
@@ -73,6 +115,38 @@
         consistente en que al llegar a 45 puntos (en aquel entonces 15-30-45) cada set se definía con dos
         bolas llamadas “deuce” y “advantage” respectivamente; además agregaron dos servicios en lugar de uno.
     </p>
+    </div>
+    <h2>Combinación de etiquetas y clases selectores</h2>
+    <div class="ejemplo_apartado">
+    <p>El Grand Slam de tenis está formado por los cuatro torneos mayores del circuito internacional que se
+        realizan en pista de tenis <strong class="tipo_de_pista">dura</strong>, <strong class="tipo_de_pista">tierra batida</strong>
+        o <strong class="tipo_de_pista">césped</strong>, organizados por la Federación Internacional
+        de Tenis. Son los siguientes:</p>
+        <ul class="enumeracion_torneos">
+        <li>Abierto de Australia - <span class="tipo_de_pista">Pista de tenis dura</span></li> 
+        <li>Roland Garros - <span class="tipo_de_pista">Tierra batida o arcilla</span></li> 
+        <li>Wimbledon - <span class="tipo_de_pista">Césped</span></li> 
+        <li>Abierto de Estados Unidos - <span class="tipo_de_pista">Pista de tenis dura</span></li> 
+    </ul>
+    <img src="imagenes/ejemplo_combinacion_clase_etiqueta.png" alt="imagen de ejemplo" id="ejemplo_combinacion_clase_etiqueta">
+    </div>
+    <h2>Descendant selectors</h2>
+    <div class="ejemplo_apartado">
+    <p>Al finalizar el torneo, se reparten una serie de <span class="puntos">puntos</span> a los jugadores en función de la
+    <span class="ronda">ronda</span> a la que hayan llegado, como se muestra a continuación:</p> 
+        <ul class="puntos_por_ronda">
+            <li><span class="ronda">Ganador</span>: <span class="puntos">2000 puntos</span></li>
+            <li><span class="ronda">Finalista</span>: <span class="puntos">1200 puntos</span></li>
+            <li><span class="ronda">Semifinalista</span>: <span class="puntos">720 puntos</span></li>
+            <li><span class="ronda">Cuartos de final</span>: <span class="puntos">360 puntos</span></li>
+            <li><span class="ronda">4R</span>: <span class="puntos">180 puntos</span></li>
+            <li><span class="ronda">3R</span>: <span class="puntos">90 puntos</span></li>
+            <li><span class="ronda">2R</span>: <span class="puntos">45 puntos</span></li>
+            <li><span class="ronda">1R</span>: <span class="puntos">10 puntos</span></li>
+            <li><span class="ronda">Calificación previa</span>: <span class="puntos">25 puntos</span></li>
+        </ul>
+        <img src="imagenes/ejemplo_descendant_selectors_1.png" alt="imagen de ejemplo" id="ejemplo_descendant_selectors_1">
+        <img src="imagenes/ejemplo_descendant_selectors_2.png" alt="imagen de ejemplo" id="ejemplo_descendant_selectors_2">
     </div>
 </div>
 </body>
